@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: python app.py
+    ports:
+      - "8000:8000"
+    environment:
+      - URL=https://myexternalip.com/raw
